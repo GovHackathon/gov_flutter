@@ -81,7 +81,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
         ),
       ),
       bottomNavigationBar: BottomAppBar(
-        height: MediaQuery.of(context).size.height / 8,
+        height: MediaQuery.of(context).size.height / 11,
         shape: const CircularNotchedRectangle(),
         notchMargin: 15,
         child: Row(
