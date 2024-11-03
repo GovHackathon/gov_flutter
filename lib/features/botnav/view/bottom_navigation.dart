@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:gov_hackathon/features/profile/view/profile_view.dart';
 
 class BottomNavigation extends StatefulWidget {
   const BottomNavigation({super.key});
@@ -18,9 +19,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
     const Center(
       child: Text("2"),
     ),
-    const Center(
-      child: Text("3"),
-    ),
+    const ProfileView(),
   ];
 
   int currentIndex = 0;
@@ -35,10 +34,14 @@ class _BottomNavigationState extends State<BottomNavigation> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: PageView.builder(
-        controller: pageController,
-        itemCount: views.length,
-        itemBuilder: (context, index) => views[index],
+      body: SafeArea(
+        top: true,
+        bottom: true,
+        child: PageView.builder(
+          controller: pageController,
+          itemCount: views.length,
+          itemBuilder: (context, index) => views[index],
+        ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: InkWell(
