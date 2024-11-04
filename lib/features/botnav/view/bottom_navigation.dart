@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:gov_hackathon/features/profile/view/profile_view.dart';
+import 'package:gov_hackathon/features/survei/view/survei_view.dart';
 
 class BottomNavigation extends StatefulWidget {
   const BottomNavigation({super.key});
@@ -13,9 +14,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
   PageController pageController = PageController();
 
   List views = [
-    const Center(
-      child: Text("1"),
-    ),
+    const SurveiView(),
     const Center(
       child: Text("2"),
     ),
