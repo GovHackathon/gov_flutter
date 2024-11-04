@@ -29,7 +29,7 @@ class ProfileView extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Naraya Anggraini"),
+                      Text("Yazid Al Ghozali"),
                       SizedBox(height: 8),
                       Text("3576014403910003")
                     ],

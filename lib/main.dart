@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => const BottomNavigation(),
         '/family_data': (context) => const FamilyDataView(),
       },
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         // This is the theme of your application.
         //
