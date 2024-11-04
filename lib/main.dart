@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gov_hackathon/features/botnav/view/bottom_navigation.dart';
 
+import 'features/family_data/view/family_data_view.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -13,6 +15,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const BottomNavigation(),
+        '/family_data': (context) => const FamilyDataView(),
+      },
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -32,7 +39,6 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const BottomNavigation(),
     );
   }
 }

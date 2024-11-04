@@ -55,7 +55,7 @@ class ProfileView extends StatelessWidget {
                 Icons.family_restroom,
                 color: Color(0xff195728),
               ),
-              onTap: () {},
+              onTap: () => Navigator.pushNamed(context, '/family_data'),
             ),
             const SizedBox(height: 20),
             ListTile(
