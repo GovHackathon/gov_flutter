@@ -15,5 +15,7 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
+## Warning
+
 To run the project, you must create .env files that contains `API_KEY` and `ENDPOINT`
 where the `API_KEY` and `ENDPOINT` filled from Azure OpenAI Services.
